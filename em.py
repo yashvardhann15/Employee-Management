@@ -1,7 +1,7 @@
 import mysql.connector
 import calendar
 
-con = mysql.connector.connect(host="localhost", user='root', passwd='${{PASS.Pass}}', database='xiia')
+con = mysql.connector.connect(host="localhost", user='root', passwd= process.env.Pass, database='xiia')
 cur1 = con.cursor()
 
 def menu():
